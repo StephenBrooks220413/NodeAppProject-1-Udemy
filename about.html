@@ -11,19 +11,29 @@
 </head>
 <body>
 <!--navigation bar-->
-<nav>
-    <div>
-        <ul>
-            <li>
-                <a href="index.html">home</a>
-            </li>
-            <li>
-                <a href="about.html">about</a>
-            </li>
-            <li>
-                <a href="contact.html">contact</a>
-            </li>
-        </ul>
+<nav class="w3-top">
+    <div id="nav1" class="w3-bar w3-light-grey" style="padding: 12px;">
+        <a href="#" class="w3-bar-item w3-button">
+            <img src="img/nav-logo.png" style="height:22px;" alt="logo">
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="contact.html" class="w3-bar-item w3-button">New Article</a>
+    </div>
+    <div id="nav2">
+        <div class="w3-bar w3-light-grey" style="padding: 12px;">
+            <button class="w3-button w3-large" onclick="w3_open()">&#9776;</button>
+        </div>
+
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-hide-large"
+                    onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <div class="w3-main" style="margin-left:200px"></div>
     </div>
 </nav>
 <!--title-->
@@ -44,13 +54,34 @@
 </div>
 
 <!--footer-->
-<footer>
-    <div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+<!--footer-->
+<br><br>
+<footer class="w3-light-grey w3-margin-top w3-padding-16">
+    <div class="w3-container w3-center" style="padding-bottom: 30px;">
+        <h3>Follow Me On
+            <a href="" style="text-decoration: none;">
+                <img src="https://img.icons8.com/fluency/32/000000/facebook-new.png"/>
+            </a>
+            <a href="" style="text-decoration: none;">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/32/000000/external-linkedin-social-media-justicon-flat-justicon.png"/>
+            </a>
+            <a href="" style="text-decoration: none;">
+                <img src="https://img.icons8.com/color/32/000000/github--v1.png"/>
+            </a>
+        </h3>
+        <div class="w3-row">
+            <div class="w3-col w3-quarter">
+                links
+            </div>
+            <div class="w3-col w3-quarter">
+                links
+            </div>
+            <div class="w3-col w3-quarter">
+                links
+            </div>
+            <div class="w3-col w3-quarter">
+                links
+            </div>
         </div>
     </div>
 </footer>
